@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware.universe/main/perception/front_vehicle_velocity_estimator/">
+        <link rel="canonical" href="https://autowarefoundation.github.io/autoware.universe/main/localization/pose_estimator_arbiter/">
       
       
-        <link rel="prev" href="../euclidean_cluster/">
+        <link rel="prev" href="../pose2twist/">
       
       
-        <link rel="next" href="../ground_segmentation/">
+        <link rel="next" href="example_rule/">
       
       <link rel="icon" href="../../docs/assets/images/autoware-foundation.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
-        <title>front_vehicle_velocity_estimator - Autoware Universe Documentation</title>
+        <title>pose_estimator_arbiter - Autoware Universe Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#front_vehicle_velocity_estimator" class="md-skip">
+        <a href="#pose_estimator_arbiter" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              front_vehicle_velocity_estimator
+              pose_estimator_arbiter
             
           </span>
         </div>
@@ -300,6 +300,8 @@
         
   
   
+    
+  
 
 
   
@@ -311,7 +313,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../localization/ekf_localizer/" class="md-tabs__link">
+      <a href="../ekf_localizer/" class="md-tabs__link md-tabs__link--active">
         Localization
       </a>
     </li>
@@ -346,8 +348,6 @@
         
   
   
-    
-  
 
 
   
@@ -359,7 +359,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../bytetrack/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../perception/bytetrack/" class="md-tabs__link">
         Perception
       </a>
     </li>
@@ -1142,14 +1142,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
-          Autoware testing
+          Autoware overlay rviz plugin
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_6">
           <span class="md-nav__icon md-icon"></span>
-          Autoware testing
+          Autoware overlay rviz plugin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1171,33 +1171,25 @@
       
         
           
+            
+          
         
       
       
-        <label class="md-nav__link" for="__nav_1_6_1" id="__nav_1_6_1_label" tabindex="0">
-          Design
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../common/autoware_overlay_rviz_plugin/autoware_overlay_rviz_plugin/">Autoware overlay rviz plugin</a>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_6_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_6_1">
           <span class="md-nav__icon md-icon"></span>
-          Design
+          Autoware overlay rviz plugin
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../common/autoware_testing/design/autoware_testing-design/" class="md-nav__link">
-        autoware_testing
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -1238,14 +1230,14 @@
       
       
         <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
-          Awf vehicle rviz plugin
+          Autoware testing
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_7">
           <span class="md-nav__icon md-icon"></span>
-          Awf vehicle rviz plugin
+          Autoware testing
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1267,25 +1259,33 @@
       
         
           
-            
-          
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../common/awf_vehicle_rviz_plugin/awf_2d_overlay_vehicle/">Awf 2d overlay vehicle</a>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_1_7_1" id="__nav_1_7_1_label" tabindex="0">
+          Design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_7_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_7_1">
           <span class="md-nav__icon md-icon"></span>
-          Awf 2d overlay vehicle
+          Design
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/autoware_testing/design/autoware_testing-design/" class="md-nav__link">
+        autoware_testing
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -5681,18 +5681,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
         
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-      
-      
+          
         
           
         
@@ -5729,7 +5731,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Localization
@@ -5764,7 +5766,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/ekf_localizer/">Ekf localizer</a>
+          <a href="../ekf_localizer/">Ekf localizer</a>
           
         </div>
       
@@ -5812,7 +5814,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/geo_pose_projector/">Geo pose projector</a>
+          <a href="../geo_pose_projector/">Geo pose projector</a>
           
         </div>
       
@@ -5860,7 +5862,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/gyro_odometer/">Gyro odometer</a>
+          <a href="../gyro_odometer/">Gyro odometer</a>
           
         </div>
       
@@ -5910,7 +5912,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/landmark_based_localizer/">Landmark based localizer</a>
+          <a href="../landmark_based_localizer/">Landmark based localizer</a>
           
             <label for="__nav_5_4">
               <span class="md-nav__icon md-icon"></span>
@@ -5953,7 +5955,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/landmark_based_localizer/ar_tag_based_localizer/">Ar tag based localizer</a>
+          <a href="../landmark_based_localizer/ar_tag_based_localizer/">Ar tag based localizer</a>
           
         </div>
       
@@ -6008,7 +6010,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/localization_error_monitor/">Localization error monitor</a>
+          <a href="../localization_error_monitor/">Localization error monitor</a>
           
         </div>
       
@@ -6056,7 +6058,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/localization_util/">Localization util</a>
+          <a href="../localization_util/">Localization util</a>
           
         </div>
       
@@ -6104,7 +6106,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/ndt_scan_matcher/">Ndt scan matcher</a>
+          <a href="../ndt_scan_matcher/">Ndt scan matcher</a>
           
         </div>
       
@@ -6152,7 +6154,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/pose2twist/">Pose2twist</a>
+          <a href="../pose2twist/">Pose2twist</a>
           
         </div>
       
@@ -6176,18 +6178,63 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Pose estimator arbiter</a>
+          
+            <label for="__nav_5_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5_9">
+          <span class="md-nav__icon md-icon"></span>
+          Pose estimator arbiter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_9" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_9_2" >
       
       
         
@@ -6200,17 +6247,24 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/pose_initializer/">Pose initializer</a>
+          <a href="example_rule/">Example rule</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_9">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_9_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_9_2">
           <span class="md-nav__icon md-icon"></span>
-          Pose initializer
+          Example rule
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
             
           
         </ul>
@@ -6248,14 +6302,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/pose_instability_detector/">Pose instability detector</a>
+          <a href="../pose_initializer/">Pose initializer</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_10_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5_10">
           <span class="md-nav__icon md-icon"></span>
-          Pose instability detector
+          Pose initializer
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6296,14 +6350,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/stop_filter/">Stop filter</a>
+          <a href="../pose_instability_detector/">Pose instability detector</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5_11">
           <span class="md-nav__icon md-icon"></span>
-          Stop filter
+          Pose instability detector
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6344,14 +6398,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/tree_structured_parzen_estimator/">Tree structured parzen estimator</a>
+          <a href="../stop_filter/">Stop filter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5_12">
           <span class="md-nav__icon md-icon"></span>
-          Tree structured parzen estimator
+          Stop filter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6392,14 +6446,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/twist2accel/">Twist2accel</a>
+          <a href="../tree_structured_parzen_estimator/">Tree structured parzen estimator</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5_13">
           <span class="md-nav__icon md-icon"></span>
-          Twist2accel
+          Tree structured parzen estimator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -6435,6 +6489,54 @@
             
           
         
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../twist2accel/">Twist2accel</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_14">
+          <span class="md-nav__icon md-icon"></span>
+          Twist2accel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15" >
+      
+      
+        
+          
+            
+          
+        
           
         
           
@@ -6450,16 +6552,16 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/">Yabloc</a>
+          <a href="../yabloc/">Yabloc</a>
           
-            <label for="__nav_5_14">
+            <label for="__nav_5_15">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15">
           <span class="md-nav__icon md-icon"></span>
           Yabloc
         </label>
@@ -6480,7 +6582,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14_2" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15_2" >
       
       
         
@@ -6493,12 +6595,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/yabloc_common/">Yabloc common</a>
+          <a href="../yabloc/yabloc_common/">Yabloc common</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_15_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15_2">
           <span class="md-nav__icon md-icon"></span>
           Yabloc common
         </label>
@@ -6526,7 +6628,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14_3" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15_3" >
       
       
         
@@ -6539,12 +6641,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/yabloc_image_processing/">Yabloc image processing</a>
+          <a href="../yabloc/yabloc_image_processing/">Yabloc image processing</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_15_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15_3">
           <span class="md-nav__icon md-icon"></span>
           Yabloc image processing
         </label>
@@ -6572,7 +6674,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14_4" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15_4" >
       
       
         
@@ -6585,12 +6687,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/yabloc_monitor/">Yabloc monitor</a>
+          <a href="../yabloc/yabloc_monitor/">Yabloc monitor</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_4">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_15_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15_4">
           <span class="md-nav__icon md-icon"></span>
           Yabloc monitor
         </label>
@@ -6618,7 +6720,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14_5" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15_5" >
       
       
         
@@ -6631,12 +6733,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/yabloc_particle_filter/">Yabloc particle filter</a>
+          <a href="../yabloc/yabloc_particle_filter/">Yabloc particle filter</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_5">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_15_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15_5">
           <span class="md-nav__icon md-icon"></span>
           Yabloc particle filter
         </label>
@@ -6664,7 +6766,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14_6" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_15_6" >
       
       
         
@@ -6677,12 +6779,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../localization/yabloc/yabloc_pose_initializer/">Yabloc pose initializer</a>
+          <a href="../yabloc/yabloc_pose_initializer/">Yabloc pose initializer</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_14_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_14_6">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_15_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_15_6">
           <span class="md-nav__icon md-icon"></span>
           Yabloc pose initializer
         </label>
@@ -6915,13 +7017,17 @@
       
         
           
+            
+          
         
       
       
-        <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
-          Map tf generator
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../map/map_tf_generator/">Map tf generator</a>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6_4">
@@ -6931,18 +7037,6 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../map/map_tf_generator/Readme/" class="md-nav__link">
-        map_tf_generator
-      </a>
-    </li>
-  
-
-            
           
         </ul>
       </nav>
@@ -6963,26 +7057,18 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
       
       
         
-          
-        
-          
-        
-          
-        
-          
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
         
           
         
@@ -7071,7 +7157,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Perception
@@ -7106,7 +7192,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../bytetrack/">Bytetrack</a>
+          <a href="../../perception/bytetrack/">Bytetrack</a>
           
         </div>
       
@@ -7154,7 +7240,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../cluster_merger/">Cluster merger</a>
+          <a href="../../perception/cluster_merger/">Cluster merger</a>
           
         </div>
       
@@ -7202,7 +7288,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../compare_map_segmentation/">Compare map segmentation</a>
+          <a href="../../perception/compare_map_segmentation/">Compare map segmentation</a>
           
         </div>
       
@@ -7250,7 +7336,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../crosswalk_traffic_light_estimator/">Crosswalk traffic light estimator</a>
+          <a href="../../perception/crosswalk_traffic_light_estimator/">Crosswalk traffic light estimator</a>
           
         </div>
       
@@ -7298,7 +7384,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../detected_object_feature_remover/">Detected object feature remover</a>
+          <a href="../../perception/detected_object_feature_remover/">Detected object feature remover</a>
           
         </div>
       
@@ -7354,7 +7440,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../detected_object_validation/">Detected object validation</a>
+          <a href="../../perception/detected_object_validation/">Detected object validation</a>
           
             <label for="__nav_7_6">
               <span class="md-nav__icon md-icon"></span>
@@ -7377,7 +7463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detected_object_validation/object-lanelet-filter/" class="md-nav__link">
+      <a href="../../perception/detected_object_validation/object-lanelet-filter/" class="md-nav__link">
         object_lanelet_filter
       </a>
     </li>
@@ -7391,7 +7477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detected_object_validation/object-position-filter/" class="md-nav__link">
+      <a href="../../perception/detected_object_validation/object-position-filter/" class="md-nav__link">
         object_position_filter
       </a>
     </li>
@@ -7405,7 +7491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detected_object_validation/obstacle-pointcloud-based-validator/" class="md-nav__link">
+      <a href="../../perception/detected_object_validation/obstacle-pointcloud-based-validator/" class="md-nav__link">
         obstacle pointcloud based validator
       </a>
     </li>
@@ -7419,7 +7505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detected_object_validation/occupancy-grid-based-validator/" class="md-nav__link">
+      <a href="../../perception/detected_object_validation/occupancy-grid-based-validator/" class="md-nav__link">
         occupancy grid based validator
       </a>
     </li>
@@ -7462,7 +7548,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../detection_by_tracker/">Detection by tracker</a>
+          <a href="../../perception/detection_by_tracker/">Detection by tracker</a>
           
         </div>
       
@@ -7510,7 +7596,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../elevation_map_loader/">Elevation map loader</a>
+          <a href="../../perception/elevation_map_loader/">Elevation map loader</a>
           
         </div>
       
@@ -7558,7 +7644,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../euclidean_cluster/">Euclidean cluster</a>
+          <a href="../../perception/euclidean_cluster/">Euclidean cluster</a>
           
         </div>
       
@@ -7582,18 +7668,18 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_10" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_10" >
       
       
         
@@ -7601,22 +7687,114 @@
             
           
         
+          
+        
       
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Front vehicle velocity estimator</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../perception/ground_segmentation/">Ground segmentation</a>
+          
+            <label for="__nav_7_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_10_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_10_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_10">
           <span class="md-nav__icon md-icon"></span>
-          Front vehicle velocity estimator
+          Ground segmentation
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_10_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_10_2" id="__nav_7_10_2_label" tabindex="0">
+          Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_10_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/ground_segmentation/docs/ransac-ground-filter/" class="md-nav__link">
+        RANSAC Ground Filter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/ground_segmentation/docs/ray-ground-filter/" class="md-nav__link">
+        Ray Ground Filter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/ground_segmentation/docs/scan-ground-filter/" class="md-nav__link">
+        Scan Ground Filter
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
             
           
         </ul>
@@ -7656,7 +7834,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ground_segmentation/">Ground segmentation</a>
+          <a href="../../perception/image_projection_based_fusion/">Image projection based fusion</a>
           
             <label for="__nav_7_11">
               <span class="md-nav__icon md-icon"></span>
@@ -7667,7 +7845,7 @@
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_11">
           <span class="md-nav__icon md-icon"></span>
-          Ground segmentation
+          Image projection based fusion
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -7696,6 +7874,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_7_11_2" id="__nav_7_11_2_label" tabindex="0">
@@ -7716,8 +7898,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../ground_segmentation/docs/ransac-ground-filter/" class="md-nav__link">
-        RANSAC Ground Filter
+      <a href="../../perception/image_projection_based_fusion/docs/pointpainting-fusion/" class="md-nav__link">
+        pointpainting_fusion
       </a>
     </li>
   
@@ -7730,8 +7912,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../ground_segmentation/docs/ray-ground-filter/" class="md-nav__link">
-        Ray Ground Filter
+      <a href="../../perception/image_projection_based_fusion/docs/roi-cluster-fusion/" class="md-nav__link">
+        roi_cluster_fusion
       </a>
     </li>
   
@@ -7744,8 +7926,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../ground_segmentation/docs/scan-ground-filter/" class="md-nav__link">
-        Scan Ground Filter
+      <a href="../../perception/image_projection_based_fusion/docs/roi-detected-object-fusion/" class="md-nav__link">
+        roi_detected_object_fusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/image_projection_based_fusion/docs/roi-pointcloud-fusion/" class="md-nav__link">
+        roi_pointcloud_fusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/image_projection_based_fusion/docs/segmentation-pointcloud-fusion/" class="md-nav__link">
+        segmentation_pointcloud_fusion
       </a>
     </li>
   
@@ -7794,14 +8004,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../heatmap_visualizer/">Heatmap visualizer</a>
+          <a href="../../perception/lidar_apollo_instance_segmentation/">Lidar apollo instance segmentation</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_12">
           <span class="md-nav__icon md-icon"></span>
-          Heatmap visualizer
+          Lidar apollo instance segmentation
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -7837,146 +8047,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../image_projection_based_fusion/">Image projection based fusion</a>
-          
-            <label for="__nav_7_13">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../../perception/lidar_apollo_segmentation_tvm/">Lidar apollo segmentation tvm</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_13_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_13">
           <span class="md-nav__icon md-icon"></span>
-          Image projection based fusion
+          Lidar apollo segmentation tvm
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_13_2" >
-      
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_7_13_2" id="__nav_7_13_2_label" tabindex="0">
-          Docs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_13_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_13_2">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../image_projection_based_fusion/docs/pointpainting-fusion/" class="md-nav__link">
-        pointpainting_fusion
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../image_projection_based_fusion/docs/roi-cluster-fusion/" class="md-nav__link">
-        roi_cluster_fusion
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../image_projection_based_fusion/docs/roi-detected-object-fusion/" class="md-nav__link">
-        roi_detected_object_fusion
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../image_projection_based_fusion/docs/roi-pointcloud-fusion/" class="md-nav__link">
-        roi_pointcloud_fusion
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../image_projection_based_fusion/docs/segmentation-pointcloud-fusion/" class="md-nav__link">
-        segmentation_pointcloud_fusion
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
             
           
         </ul>
@@ -8014,14 +8100,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_apollo_instance_segmentation/">Lidar apollo instance segmentation</a>
+          <a href="../../perception/lidar_apollo_segmentation_tvm_nodes/">Lidar apollo segmentation tvm nodes</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_14_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_14">
           <span class="md-nav__icon md-icon"></span>
-          Lidar apollo instance segmentation
+          Lidar apollo segmentation tvm nodes
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8057,52 +8143,6 @@
             
           
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_apollo_segmentation_tvm/">Lidar apollo segmentation tvm</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_15_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_15">
-          <span class="md-nav__icon md-icon"></span>
-          Lidar apollo segmentation tvm
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_16" >
-      
-      
-        
-          
-            
           
         
       
@@ -8110,66 +8150,16 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_apollo_segmentation_tvm_nodes/">Lidar apollo segmentation tvm nodes</a>
+          <a href="../../perception/lidar_centerpoint/">Lidar centerpoint</a>
           
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_16_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_16">
-          <span class="md-nav__icon md-icon"></span>
-          Lidar apollo segmentation tvm nodes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_17" >
-      
-      
-        
-          
-            
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_centerpoint/">Lidar centerpoint</a>
-          
-            <label for="__nav_7_17">
+            <label for="__nav_7_15">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_17_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_17">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_15">
           <span class="md-nav__icon md-icon"></span>
           Lidar centerpoint
         </label>
@@ -8190,7 +8180,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_17_2" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_15_2" >
       
       
         
@@ -8198,13 +8188,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7_17_2" id="__nav_7_17_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_7_15_2" id="__nav_7_15_2_label" tabindex="0">
           Launch
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_17_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_17_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_15_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_15_2">
           <span class="md-nav__icon md-icon"></span>
           Launch
         </label>
@@ -8223,7 +8213,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_17_2_1" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_15_2_1" >
       
       
         
@@ -8236,12 +8226,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/">Centerpoint vs centerpoint tiny</a>
+          <a href="../../perception/lidar_centerpoint/launch/centerpoint_vs_centerpoint-tiny/">Centerpoint vs centerpoint tiny</a>
           
         </div>
       
-      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_17_2_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_17_2_1">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_15_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_15_2_1">
           <span class="md-nav__icon md-icon"></span>
           Centerpoint vs centerpoint tiny
         </label>
@@ -8285,7 +8275,7 @@
       
         
       
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_18" >
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_16" >
       
       
         
@@ -8298,17 +8288,133 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../lidar_centerpoint_tvm/">Lidar centerpoint tvm</a>
+          <a href="../../perception/lidar_centerpoint_tvm/">Lidar centerpoint tvm</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_16">
+          <span class="md-nav__icon md-icon"></span>
+          Lidar centerpoint tvm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_17" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../perception/map_based_prediction/">Map based prediction</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_17_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_17">
+          <span class="md-nav__icon md-icon"></span>
+          Map based prediction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_18" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../perception/multi_object_tracker/">Multi object tracker</a>
+          
+            <label for="__nav_7_18">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_18_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_18">
           <span class="md-nav__icon md-icon"></span>
-          Lidar centerpoint tvm
+          Multi object tracker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/multi_object_tracker/models/" class="md-nav__link">
+        Models used in this module
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -8346,14 +8452,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../map_based_prediction/">Map based prediction</a>
+          <a href="../../perception/object_merger/">Object merger</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_19_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_19">
           <span class="md-nav__icon md-icon"></span>
-          Map based prediction
+          Object merger
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8389,42 +8495,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../multi_object_tracker/">Multi object tracker</a>
-          
-            <label for="__nav_7_20">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../../perception/object_range_splitter/">Object range splitter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_20_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_20">
           <span class="md-nav__icon md-icon"></span>
-          Multi object tracker
+          Object range splitter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../multi_object_tracker/models/" class="md-nav__link">
-        Models used in this module
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -8462,14 +8548,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../object_merger/">Object merger</a>
+          <a href="../../perception/object_velocity_splitter/">Object velocity splitter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_21">
           <span class="md-nav__icon md-icon"></span>
-          Object merger
+          Object velocity splitter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8510,14 +8596,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../object_range_splitter/">Object range splitter</a>
+          <a href="../../perception/occupancy_grid_map_outlier_filter/">Occupancy grid map outlier filter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_22_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_22">
           <span class="md-nav__icon md-icon"></span>
-          Object range splitter
+          Occupancy grid map outlier filter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8553,22 +8639,74 @@
             
           
         
+          
+        
+          
+        
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../object_velocity_splitter/">Object velocity splitter</a>
+          <a href="../../perception/probabilistic_occupancy_grid_map/">Probabilistic occupancy grid map</a>
+          
+            <label for="__nav_7_23">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_23_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_23">
           <span class="md-nav__icon md-icon"></span>
-          Object velocity splitter
+          Probabilistic occupancy grid map
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/probabilistic_occupancy_grid_map/laserscan-based-occupancy-grid-map/" class="md-nav__link">
+        laserscan based occupancy grid map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/probabilistic_occupancy_grid_map/pointcloud-based-occupancy-grid-map/" class="md-nav__link">
+        pointcloud based occupancy grid map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perception/probabilistic_occupancy_grid_map/synchronized_grid_map_fusion/" class="md-nav__link">
+        synchronized OGM fusion
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -8606,14 +8744,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../occupancy_grid_map_outlier_filter/">Occupancy grid map outlier filter</a>
+          <a href="../../perception/radar_crossing_objects_noise_filter/">Radar crossing objects noise filter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_24_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_24">
           <span class="md-nav__icon md-icon"></span>
-          Occupancy grid map outlier filter
+          Radar crossing objects noise filter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8651,16 +8789,12 @@
         
           
         
-          
-        
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../probabilistic_occupancy_grid_map/">Probabilistic occupancy grid map</a>
+          <a href="../../perception/radar_fusion_to_detected_object/">Radar fusion to detected object</a>
           
             <label for="__nav_7_25">
               <span class="md-nav__icon md-icon"></span>
@@ -8671,7 +8805,7 @@
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_25_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_25">
           <span class="md-nav__icon md-icon"></span>
-          Probabilistic occupancy grid map
+          Radar fusion to detected object
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8682,14 +8816,33 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../probabilistic_occupancy_grid_map/laserscan-based-occupancy-grid-map/" class="md-nav__link">
-        laserscan based occupancy grid map
-      </a>
-    </li>
-  
-
-            
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_25_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_25_2" id="__nav_7_25_2_label" tabindex="0">
+          Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_25_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_25_2">
+          <span class="md-nav__icon md-icon"></span>
+          Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -8697,23 +8850,16 @@
   
   
     <li class="md-nav__item">
-      <a href="../probabilistic_occupancy_grid_map/pointcloud-based-occupancy-grid-map/" class="md-nav__link">
-        pointcloud based occupancy grid map
+      <a href="../../perception/radar_fusion_to_detected_object/docs/algorithm/" class="md-nav__link">
+        Algorithm
       </a>
     </li>
   
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../probabilistic_occupancy_grid_map/synchronized_grid_map_fusion/" class="md-nav__link">
-        synchronized OGM fusion
-      </a>
+        </ul>
+      </nav>
     </li>
   
 
@@ -8754,14 +8900,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../radar_crossing_objects_noise_filter/">Radar crossing objects noise filter</a>
+          <a href="../../perception/radar_object_clustering/">Radar object clustering</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_26_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_26">
           <span class="md-nav__icon md-icon"></span>
-          Radar crossing objects noise filter
+          Radar object clustering
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8804,7 +8950,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../radar_fusion_to_detected_object/">Radar fusion to detected object</a>
+          <a href="../../perception/radar_object_tracker/">Radar object tracker</a>
           
             <label for="__nav_7_27">
               <span class="md-nav__icon md-icon"></span>
@@ -8815,44 +8961,11 @@
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_27_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_27">
           <span class="md-nav__icon md-icon"></span>
-          Radar fusion to detected object
+          Radar object tracker
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_27_2" >
-      
-      
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_7_27_2" id="__nav_7_27_2_label" tabindex="0">
-          Docs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_27_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_27_2">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -8860,16 +8973,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../radar_fusion_to_detected_object/docs/algorithm/" class="md-nav__link">
-        Algorithm
+      <a href="../../perception/radar_object_tracker/models/" class="md-nav__link">
+        models
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -8910,14 +9016,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../radar_object_clustering/">Radar object clustering</a>
+          <a href="../../perception/radar_tracks_msgs_converter/">Radar tracks msgs converter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_28_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_28">
           <span class="md-nav__icon md-icon"></span>
-          Radar object clustering
+          Radar tracks msgs converter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8953,42 +9059,22 @@
             
           
         
-          
-        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../radar_object_tracker/">Radar object tracker</a>
-          
-            <label for="__nav_7_29">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
+          <a href="../../perception/shape_estimation/">Shape estimation</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_29_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_29">
           <span class="md-nav__icon md-icon"></span>
-          Radar object tracker
+          Shape estimation
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../radar_object_tracker/models/" class="md-nav__link">
-        models
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -9026,14 +9112,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../radar_tracks_msgs_converter/">Radar tracks msgs converter</a>
+          <a href="../../perception/simple_object_merger/">Simple object merger</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_30_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_30">
           <span class="md-nav__icon md-icon"></span>
-          Radar tracks msgs converter
+          Simple object merger
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9074,14 +9160,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../shape_estimation/">Shape estimation</a>
+          <a href="../../perception/tensorrt_classifier/">Tensorrt classifier</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_31_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_31">
           <span class="md-nav__icon md-icon"></span>
-          Shape estimation
+          Tensorrt classifier
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9122,14 +9208,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../simple_object_merger/">Simple object merger</a>
+          <a href="../../perception/tensorrt_yolox/">Tensorrt yolox</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_32_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_32">
           <span class="md-nav__icon md-icon"></span>
-          Simple object merger
+          Tensorrt yolox
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9170,14 +9256,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../tensorrt_classifier/">Tensorrt classifier</a>
+          <a href="../../perception/tracking_object_merger/">Tracking object merger</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_33_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_33">
           <span class="md-nav__icon md-icon"></span>
-          Tensorrt classifier
+          Tracking object merger
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9218,14 +9304,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../tensorrt_yolo/">Tensorrt yolo</a>
+          <a href="../../perception/traffic_light_arbiter/">Traffic light arbiter</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_34_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_34">
           <span class="md-nav__icon md-icon"></span>
-          Tensorrt yolo
+          Traffic light arbiter
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9266,14 +9352,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../tensorrt_yolox/">Tensorrt yolox</a>
+          <a href="../../perception/traffic_light_classifier/">Traffic light classifier</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_35_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_35">
           <span class="md-nav__icon md-icon"></span>
-          Tensorrt yolox
+          Traffic light classifier
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9314,14 +9400,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../tracking_object_merger/">Tracking object merger</a>
+          <a href="../../perception/traffic_light_fine_detector/">Traffic light fine detector</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_36_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_36">
           <span class="md-nav__icon md-icon"></span>
-          Tracking object merger
+          Traffic light fine detector
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9362,14 +9448,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_arbiter/">Traffic light arbiter</a>
+          <a href="../../perception/traffic_light_map_based_detector/">Traffic light map based detector</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_37_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_37">
           <span class="md-nav__icon md-icon"></span>
-          Traffic light arbiter
+          Traffic light map based detector
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9410,14 +9496,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_classifier/">Traffic light classifier</a>
+          <a href="../../perception/traffic_light_multi_camera_fusion/">Traffic light multi camera fusion</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_38_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_38">
           <span class="md-nav__icon md-icon"></span>
-          Traffic light classifier
+          Traffic light multi camera fusion
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9458,14 +9544,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_fine_detector/">Traffic light fine detector</a>
+          <a href="../../perception/traffic_light_occlusion_predictor/">Traffic light occlusion predictor</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_39_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_39">
           <span class="md-nav__icon md-icon"></span>
-          Traffic light fine detector
+          Traffic light occlusion predictor
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -9506,204 +9592,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_map_based_detector/">Traffic light map based detector</a>
+          <a href="../../perception/traffic_light_visualization/">Traffic light visualization</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_40_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_40">
-          <span class="md-nav__icon md-icon"></span>
-          Traffic light map based detector
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_41" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_multi_camera_fusion/">Traffic light multi camera fusion</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_41_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_41">
-          <span class="md-nav__icon md-icon"></span>
-          Traffic light multi camera fusion
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_42" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_occlusion_predictor/">Traffic light occlusion predictor</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_42_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_42">
-          <span class="md-nav__icon md-icon"></span>
-          Traffic light occlusion predictor
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_43" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_ssd_fine_detector/">Traffic light ssd fine detector</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_43_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_43">
-          <span class="md-nav__icon md-icon"></span>
-          Traffic light ssd fine detector
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_44" >
-      
-      
-        
-          
-            
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../traffic_light_visualization/">Traffic light visualization</a>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_44_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7_44">
           <span class="md-nav__icon md-icon"></span>
           Traffic light visualization
         </label>
@@ -14679,36 +14573,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#algorithm" class="md-nav__link">
-    Algorithm
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-do-we-need-a-stopresume-mechanism" class="md-nav__link">
+    Why do we need a stop/resume mechanism?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-pose_estimators" class="md-nav__link">
+    Supporting pose_estimators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demonstration" class="md-nav__link">
+    Demonstration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    Interfaces
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    Input
+  <a href="#trouble-shooting" class="md-nav__link">
+    Trouble Shooting
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    Output
+  <a href="#architecture" class="md-nav__link">
+    Architecture
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#node-parameter" class="md-nav__link">
-    Node parameter
+  <a href="#how-to-launch" class="md-nav__link">
+    How to launch
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-parameter" class="md-nav__link">
-    Core parameter
+  <a href="#switching-rules" class="md-nav__link">
+    Switching Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pose-initialization" class="md-nav__link">
+    Pose Initialization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-plans" class="md-nav__link">
+    Future Plans
   </a>
   
 </li>
@@ -14731,133 +14673,265 @@
   
 
 
-<div><h1 id="front_vehicle_velocity_estimator">front_vehicle_velocity_estimator<a class="headerlink" href="#front_vehicle_velocity_estimator" title="Permanent link">#</a></h1>
-<p>This package contains a front vehicle velocity estimation for offline perception module analysis.
-This package can:</p>
+<div><h1 id="pose_estimator_arbiter">pose_estimator_arbiter<a class="headerlink" href="#pose_estimator_arbiter" title="Permanent link">#</a></h1>
+<p>Table of contents:</p>
 <ul>
-<li>Attach velocity to 3D detections from velocity estimation with LiDAR pointcloud.</li>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#interfaces">Interface</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#how-to-launch">How to launch</a></li>
+<li><a href="#switching-rules">Switching Rules</a></li>
+<li><a href="#pose-initialization">Pose Initialization</a></li>
+<li><a href="#future-plans">Future Plans</a></li>
 </ul>
-<h2 id="algorithm">Algorithm<a class="headerlink" href="#algorithm" title="Permanent link">#</a></h2>
+<h2 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">#</a></h2>
+<p>This package launches multiple pose estimators and provides the capability to stop or resume specific pose estimators based on the situation.
+It provides provisional switching rules and will be adaptable to a wide variety of rules in the future.</p>
+<p>Please refer to <a href="https://github.com/orgs/autowarefoundation/discussions/3878">this discussion</a> about other ideas on implementation.</p>
+<h3 id="why-do-we-need-a-stopresume-mechanism">Why do we need a stop/resume mechanism?<a class="headerlink" href="#why-do-we-need-a-stopresume-mechanism" title="Permanent link">#</a></h3>
+<p>It is possible to launch multiple pose_estimators and fuse them using a Kalman filter by editing launch files.
+However, this approach is not preferable due to computational costs.</p>
+<p>Particularly, NDT and YabLoc are computationally intensive, and it's not recommended to run them simultaneously.
+Also, even if both can be activated at the same time, the Kalman Filter may be affected by one of them giving bad output.</p>
+<blockquote>
+<p>[!NOTE]
+Currently, <strong>there is ONLY A RULE implemented that always enables all pose_estimators.</strong>
+If users want to toggle pose_estimator with their own rules, they need to add new rules. by referring to example_rule.
+The <a href="example_rule/">example_rule</a> has source code that can be used as a reference for implementing the rules.</p>
+</blockquote>
+<h3 id="supporting-pose_estimators">Supporting pose_estimators<a class="headerlink" href="#supporting-pose_estimators" title="Permanent link">#</a></h3>
 <ul>
-<li>Processing flow<ol>
-<li>Choose front vehicle from front area objects.</li>
-<li>Choose nearest neighbor point within front vehicle.</li>
-<li>Estimate velocity of front vehicle by using the differentiated value from time series of nearest neighbor point positions.</li>
-<li>Compensate ego vehicle twist</li>
-</ol>
-</li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/ndt_scan_matcher">ndt_scan_matcher</a></li>
+<li><a href="https://autowarefoundation.github.io/autoware-documentation/main/how-to-guides/integrating-autoware/launch-autoware/localization/eagleye/">eagleye</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/yabloc">yabloc</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/localization/landmark_based_localizer">landmark_based_localizer</a></li>
 </ul>
-<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>~/input/objects</code></td>
-<td>autoware_auto_perception_msgs/msg/DetectedObject.msg</td>
-<td>3D detected objects.</td>
-</tr>
-<tr>
-<td><code>~/input/pointcloud</code></td>
-<td>sensor_msgs/msg/PointCloud2.msg</td>
-<td>LiDAR pointcloud.</td>
-</tr>
-<tr>
-<td><code>~/input/odometry</code></td>
-<td>nav_msgs::msg::Odometry.msg</td>
-<td>Odometry data.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>~/output/objects</code></td>
-<td>autoware_auto_perception_msgs/msg/DetectedObjects.msg</td>
-<td>3D detected object with twist.</td>
-</tr>
-<tr>
-<td><code>~/debug/nearest_neighbor_pointcloud</code></td>
-<td>sensor_msgs/msg/PointCloud2.msg</td>
-<td>The pointcloud msg of nearest neighbor point.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="node-parameter">Node parameter<a class="headerlink" href="#node-parameter" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>update_rate_hz</code></td>
-<td align="left">double</td>
-<td align="left">The update rate [hz].</td>
-<td align="left">10.0</td>
-</tr>
-</tbody>
-</table>
-<h2 id="core-parameter">Core parameter<a class="headerlink" href="#core-parameter" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Type</th>
-<th align="left">Description</th>
-<th align="left">Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>moving_average_num</code></td>
-<td align="left">int</td>
-<td align="left">The moving average number for velocity estimation.</td>
-<td align="left">1</td>
-</tr>
-<tr>
-<td align="left"><code>threshold_pointcloud_z_high</code></td>
-<td align="left">float</td>
-<td align="left">The threshold for z position value of point when choosing nearest neighbor point within front vehicle [m]. If z &gt; <code>threshold_pointcloud_z_high</code>, the point is considered to noise.</td>
-<td align="left">1.0f</td>
-</tr>
-<tr>
-<td align="left"><code>threshold_pointcloud_z_low</code></td>
-<td align="left">float</td>
-<td align="left">The threshold for z position value of point when choosing nearest neighbor point within front vehicle [m]. If z &lt; <code>threshold_pointcloud_z_low</code>, the point is considered to noise like ground.</td>
-<td align="left">0.6f</td>
-</tr>
-<tr>
-<td align="left"><code>threshold_relative_velocity</code></td>
-<td align="left">double</td>
-<td align="left">The threshold for min and max of estimated relative velocity (<span class="arithmatex">\(v_{re}\)</span>) [m/s]. If <span class="arithmatex">\(v_{re}\)</span> &lt; - <code>threshold_relative_velocity</code> , then <span class="arithmatex">\(v_{re}\)</span> = - <code>threshold_relative_velocity</code>. If <span class="arithmatex">\(v_{re}\)</span> &gt; <code>threshold_relative_velocity</code>, then <span class="arithmatex">\(v_{re}\)</span> = <code>threshold_relative_velocity</code>.</td>
-<td align="left">10.0</td>
-</tr>
-<tr>
-<td align="left"><code>threshold_absolute_velocity</code></td>
-<td align="left">double</td>
-<td align="left">The threshold for max of estimated absolute velocity (<span class="arithmatex">\(v_{ae}\)</span>) [m/s]. If <span class="arithmatex">\(v_{ae}\)</span> &gt; <code>threshold_absolute_velocity</code>, then <span class="arithmatex">\(v_{ae}\)</span> = <code>threshold_absolute_velocity</code>.</td>
-<td align="left">20.0</td>
-</tr>
-</tbody>
-</table></div>
+<h3 id="demonstration">Demonstration<a class="headerlink" href="#demonstration" title="Permanent link">#</a></h3>
+<p>The following video demonstrates the switching of four different pose estimators.</p>
+<div><video controls src="https://github.com/autowarefoundation/autoware.universe/assets/24854875/d4d48be4-748e-4ffc-bde2-d498911ed3a1" muted="false" width="800"></video></div>
+
+<p>Users can reproduce the demonstration using the following data and launch command:</p>
+<p><a href="https://drive.google.com/file/d/1MxLo1Sw6PdvfkyOYf_9A5dZ9uli1vPvS/view">sample data (rosbag &amp; map)</a>
+The rosbag is simulated data created by <a href="https://tier4.github.io/AWSIM/">AWSIM</a>.
+The map is an edited version of the <a href="https://github.com/tier4/AWSIM/releases/download/v1.1.0/nishishinjuku_autoware_map.zip">original map data</a> published on the AWSIM documentation page to make it suitable for multiple pose_estimators.</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>autoware_launch<span class="w"> </span>logging_simulator.launch.xml<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>map_path:<span class="o">=</span>&lt;your-map-path&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>vehicle_model:<span class="o">=</span>sample_vehicle<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>sensor_model:<span class="o">=</span>awsim_sensor_kit<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>pose_source:<span class="o">=</span>ndt_yabloc_artag_eagleye
+</code></pre></div>
+<h2 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">#</a></h2>
+<details>
+<summary>Click to show details</summary>
+
+### Parameters
+
+There are no parameters.
+
+### Services
+
+| Name             | Type                            | Description                     |
+| ---------------- | ------------------------------- | ------------------------------- |
+| `/config_logger` | logging_demo::srv::ConfigLogger | service to modify logging level |
+
+### Clients
+
+| Name                  | Type                  | Description                       |
+| --------------------- | --------------------- | --------------------------------- |
+| `/yabloc_suspend_srv` | std_srv::srv::SetBool | service to stop or restart yabloc |
+
+### Subscriptions
+
+For pose estimator arbitration:
+
+| Name                                  | Type                                          | Description    |
+| ------------------------------------- | --------------------------------------------- | -------------- |
+| `/input/artag/image`                  | sensor_msgs::msg::Image                       | ArTag input    |
+| `/input/yabloc/image`                 | sensor_msgs::msg::Image                       | YabLoc input   |
+| `/input/eagleye/pose_with_covariance` | geometry_msgs::msg::PoseWithCovarianceStamped | Eagleye output |
+| `/input/ndt/pointcloud`               | sensor_msgs::msg::PointCloud2                 | NDT input      |
+
+For switching rule:
+
+| Name                          | Type                                                         | Description                       |
+| ----------------------------- | ------------------------------------------------------------ | --------------------------------- |
+| `/input/vector_map`           | autoware_auto_mapping_msgs::msg::HADMapBin                   | vector map                        |
+| `/input/pose_with_covariance` | geometry_msgs::msg::PoseWithCovarianceStamped                | localization final output         |
+| `/input/initialization_state` | autoware_adapi_v1_msgs::msg::LocalizationInitializationState | localization initialization state |
+
+### Publications
+
+| Name                                   | Type                                          | Description                                            |
+| -------------------------------------- | --------------------------------------------- | ------------------------------------------------------ |
+| `/output/artag/image`                  | sensor_msgs::msg::Image                       | relayed ArTag input                                    |
+| `/output/yabloc/image`                 | sensor_msgs::msg::Image                       | relayed YabLoc input                                   |
+| `/output/eagleye/pose_with_covariance` | geometry_msgs::msg::PoseWithCovarianceStamped | relayed Eagleye output                                 |
+| `/output/ndt/pointcloud`               | sensor_msgs::msg::PointCloud2                 | relayed NDT input                                      |
+| `/output/debug/marker_array`           | visualization_msgs::msg::MarkerArray          | [debug topic] everything for visualization             |
+| `/output/debug/string`                 | visualization_msgs::msg::MarkerArray          | [debug topic] debug information such as current status |
+
+</details>
+
+<h2 id="trouble-shooting">Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Permanent link">#</a></h2>
+<p>If it does not seems to work, users can get more information in the following ways.</p>
+<blockquote>
+<p>[!TIP]</p>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/localization/pose_estimator_arbiter/config_logger<span class="w"> </span>logging_demo/srv/ConfigLogger<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'{logger_name: localization.pose_estimator_arbiter, level: debug}'</span>
+</code></pre></div>
+</blockquote>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">#</a></h2>
+<details>
+<summary>Click to show details</summary>
+
+### Case of running a single pose estimator
+
+When each pose_estimator is run alone, this package does nothing.
+Following figure shows the node configuration when NDT, YabLoc Eagleye and AR-Tag are run independently.
+
+<img src="./media/single_pose_estimator.drawio.svg" alt="drawing" width="600">
+
+### Case of running multiple pose estimators
+
+When running multiple pose_estimators, pose_estimator_arbiter is executed.
+It comprises a **switching rule** and **stoppers** corresponding to each pose_estimator.
+
+- Stoppers control the pose_estimator activity by relaying inputs or outputs, or by requesting a suspend service.
+- Switching rules determine which pose_estimator to use.
+
+Which stoppers and switching rules are instantiated depends on the runtime arguments at startup.
+
+Following figure shows the node configuration when all pose_estimator are run simultaneously.
+
+<img src="./media/architecture.drawio.svg" alt="drawing" width="800">
+
+- **NDT**
+
+The NDT stopper relays topics in the front side of the point cloud pre-processor.
+
+- **YabLoc**
+
+The YabLoc stopper relays input image topics in the frontend of the image pre-processor.
+YabLoc includes a particle filter process that operates on a timer, and even when image topics are not streamed, the particle prediction process continues to work.
+To address this, the YabLoc stopper also has a service client for explicitly stopping and resuming YabLoc.
+
+- **Eagleye**
+
+The Eagleye stopper relays Eagleye's output pose topics in the backend of Eagleye's estimation process.
+Eagleye performs time-series processing internally, and it can't afford to stop the input stream.
+Furthermore, Eagleye's estimation process is lightweight enough to be run continuously without a significant load, so the relay is inserted in the backend.
+
+- **ArTag**
+
+The ArTag stopper relays image topics in the front side of the landmark localizer.
+
+</details>
+
+<h2 id="how-to-launch">How to launch<a class="headerlink" href="#how-to-launch" title="Permanent link">#</a></h2>
+<details>
+<summary>Click to show details</summary>
+
+The user can launch the desired pose_estimators by giving the pose_estimator names as a concatenation of underscores for the runtime argument `pose_source`.
+
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>autoware_launch<span class="w"> </span>logging_simulator.launch.xml<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>map_path:<span class="o">=</span>&lt;your-map-path&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>vehicle_model:<span class="o">=</span>sample_vehicle<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>sensor_model:<span class="o">=</span>awsim_sensor_kit<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>pose_source:<span class="o">=</span>ndt_yabloc_artag_eagleye
+</code></pre></div>
+
+Even if `pose_source` includes an unexpected string, it will be filtered appropriately.
+Please see the table below for details.
+
+| given runtime argument                      | parsed pose_estimator_arbiter's param (pose_sources) |
+| ------------------------------------------- | ---------------------------------------------------- |
+| `pose_source:=ndt`                          | `["ndt"]`                                            |
+| `pose_source:=nan`                          | `[]`                                                 |
+| `pose_source:=yabloc_ndt`                   | `["ndt","yabloc"]`                                   |
+| `pose_source:=yabloc_ndt_ndt_ndt`           | `["ndt","yabloc"]`                                   |
+| `pose_source:=ndt_yabloc_eagleye`           | `["ndt","yabloc","eagleye"]`                         |
+| `pose_source:=ndt_yabloc_nan_eagleye_artag` | `["ndt","yabloc","eagleye","artag"]`                 |
+
+</details>
+
+<h2 id="switching-rules">Switching Rules<a class="headerlink" href="#switching-rules" title="Permanent link">#</a></h2>
+<details>
+<summary>Click to show details</summary>
+
+Currently, **ONLY ONE RULE** (`enable_all_rule`) is implemented.
+In the future, several rules will be implemented and users will be able to select rules.
+
+&gt; [!TIP]
+&gt; There are presets available to extend the rules. If you want to extend the rules, please see [example_rule](./example_rule/README.md).
+
+### Enable All Rule
+
+This is the default and simplest rule. This rule enables all pose_estimators regardless of their current state.
+
+<pre class="mermaid"><code>flowchart LR
+  A{ }
+  A --whatever --&gt; _A[enable all pose_estimators]</code></pre>
+
+</details>
+
+<h2 id="pose-initialization">Pose Initialization<a class="headerlink" href="#pose-initialization" title="Permanent link">#</a></h2>
+<p>When using multiple pose_estimators, it is necessary to appropriately adjust the parameters provided to the <code>pose_initializer</code>.</p>
+<details>
+<summary>Click to show details</summary>
+
+The following table is based on the runtime argument "pose_source" indicating which initial pose estimation methods are available and the parameters that should be provided to the pose_initialization node.
+To avoid making the application too complicated, a priority is established so that NDT is always used when it is available.
+(The pose_initializer will only perform NDT-based initial pose estimation when `ndt_enabled` and `yabloc_enabled` are both `true`).
+
+This table's usage is described from three perspectives:
+
+- **Autoware Users:** Autoware users do not need to consult this table.
+  They simply provide the desired combinations of pose_estimators, and the appropriate parameters are automatically provided to the pose_initializer.
+- **Autoware Developers:** Autoware developers can consult this table to know which parameters are assigned.
+- **Who implements New Pose Estimator Switching:**
+  Developers must extend this table and implement the assignment of appropriate parameters to the pose_initializer.
+
+|         pose_source         | invoked initialization method | `ndt_enabled` | `yabloc_enabled` | `gnss_enabled` | `sub_gnss_pose_cov`                          |
+| :-------------------------: | ----------------------------- | ------------- | ---------------- | -------------- | -------------------------------------------- |
+|             ndt             | ndt                           | true          | false            | true           | /sensing/gnss/pose_with_covariance           |
+|           yabloc            | yabloc                        | false         | true             | true           | /sensing/gnss/pose_with_covariance           |
+|           eagleye           | vehicle needs run for a while | false         | false            | true           | /localization/pose_estimator/eagleye/...     |
+|            artag            | 2D Pose Estimate (RViz)       | false         | false            | true           | /sensing/gnss/pose_with_covariance           |
+|         ndt, yabloc         | ndt                           | ndt           | true             | true           | /sensing/gnss/pose_with_covariance           |
+|        ndt, eagleye         | ndt                           | ndt           | false            | true           | /sensing/gnss/pose_with_covariance           |
+|         ndt, artag          | ndt                           | ndt           | false            | true           | /sensing/gnss/pose_with_covariance           |
+|       yabloc, eagleye       | yabloc                        | false         | true             | true           | /sensing/gnss/pose_with_covariance           |
+|        yabloc, artag        | yabloc                        | false         | true             | true           | /sensing/gnss/pose_with_covariance           |
+|       eagleye, artag        | vehicle needs run for a while | false         | false            | true           | /localization/pose_estimator/eagleye/pose... |
+|    ndt, yabloc, eagleye     | ndt                           | ndt           | true             | true           | /sensing/gnss/pose_with_covariance           |
+|     ndt, eagleye, artag     | ndt                           | ndt           | false            | true           | /sensing/gnss/pose_with_covariance           |
+|   yabloc, eagleye, artag    | yabloc                        | ndt           | true             | true           | /sensing/gnss/pose_with_covariance           |
+| ndt, yabloc, eagleye, artag | ndt                           | ndt           | true             | true           | /sensing/gnss/pose_with_covariance           |
+
+</details>
+
+<h2 id="future-plans">Future Plans<a class="headerlink" href="#future-plans" title="Permanent link">#</a></h2>
+<details>
+<summary>Click to show details</summary>
+
+### gradually switching
+
+In the future, this package will provide not only ON/OFF switching, but also a mechanism for low frequency operation, such as 50% NDT &amp; 50% YabLoc.
+
+### stopper for pose_estimators to be added in the future
+
+The basic strategy is to realize ON/OFF switching by relaying the input or output topics of that pose_estimator.
+If pose_estimator involves time-series processing with heavy computations, it's not possible to pause and resume with just topic relaying.
+
+In such cases, there may not be generally applicable solutions, but the following methods may help:
+
+1. Completely stop and **reinitialize** time-series processing, as seen in the case of YabLoc.
+2. Subscribe to `localization/kinematic_state` and **keep updating states** to ensure that the estimation does not break (relying on the output of the active pose_estimator).
+3. The multiple pose_estimator **does not support** that particular pose_estimator.
+
+Please note that this issue is fundamental to realizing multiple pose_estimators, and it will arise regardless of the architecture proposed in this case.
+
+</details></div>
 
 
 
@@ -14884,7 +14958,7 @@ This package can:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../euclidean_cluster/" class="md-footer__link md-footer__link--prev" aria-label="Previous: euclidean_cluster" rel="prev">
+          <a href="../pose2twist/" class="md-footer__link md-footer__link--prev" aria-label="Previous: pose2twist" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -14893,20 +14967,20 @@ This package can:</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                euclidean_cluster
+                pose2twist
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ground_segmentation/" class="md-footer__link md-footer__link--next" aria-label="Next: ground_segmentation" rel="next">
+          <a href="example_rule/" class="md-footer__link md-footer__link--next" aria-label="Next: example rule" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                ground_segmentation
+                example rule
               </div>
             </div>
             <div class="md-footer__button md-icon">
